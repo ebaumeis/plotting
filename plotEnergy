@@ -1,0 +1,9 @@
+# gnuplot script to plot energy from a data file created by namdE
+
+set key off
+set xlabel "Timestep"
+set ylabel "Energy"
+plot 'data' u 1:11 w l
+set terminal png enhanced
+set output "output.png"
+replot

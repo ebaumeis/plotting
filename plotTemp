@@ -1,0 +1,10 @@
+# gnuplot script to plot temperature from a data file created by namdE
+
+
+set key off
+set xlabel "Timestep"
+set ylabel "Temperature"
+plot 'data' u 1:12 w l
+set terminal png enhanced size
+set output "output.png"
+replot
